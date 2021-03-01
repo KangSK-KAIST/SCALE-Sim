@@ -51,7 +51,7 @@ def sram_traffic(
     compute_cycles = 0
 
     if systolic_r < A_c:
-        num_h_fold = math.ceil(A_c /systolic_r)
+        num_h_fold = math.ceil(A_c / systolic_r)
     else:
         max_parallel_window = math.floor(systolic_r / A_c)
 
