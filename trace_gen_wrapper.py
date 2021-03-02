@@ -45,6 +45,7 @@ def gen_all_traces(
                 sram_write_trace_file=sram_write_trace_file
             )
     elif data_flow == 'ws':
+        print()
         sram_cycles, util = \
             sram_ws.sram_traffic(
                 dimension_rows = array_h,
